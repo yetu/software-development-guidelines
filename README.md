@@ -1,4 +1,3 @@
-software-development-guidelines
-===============================
+# Software Development Guidelines for yetu
 
-All the software development guidelines and corresponding configuration files we use are stored in this repo.
+(AngularJS guidelines)[angularjs-guidelines.md]
