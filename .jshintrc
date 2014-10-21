@@ -1,0 +1,22 @@
+{
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "freeze": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": "nofunc",
+  "newcap": true,
+  "noarg": true,
+  "nonew": true,
+  "quotmark": "single",
+  "strict": true,
+  "maxdepth": 3,
+  "maxstatements": 15,
+  "maxlen": 100,
+  "esnext": true,
+  "funcscope": true,
+  "globalstrict": true
+}
