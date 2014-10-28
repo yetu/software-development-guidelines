@@ -158,3 +158,9 @@ Helps locate components fast.*
 ```javascript
 .service('yetuLoginService', require('./yetuLoginService.js'));
 ```
+
+### References
+To have a better understanding of what's going on, have a look at other good styleguides:
+
+* [johnpapa/angularjs-styleguide](https://github.com/johnpapa/angularjs-styleguide)
+* [gocardless/angularjs-style-guide](https://github.com/gocardless/angularjs-style-guide)
