@@ -137,11 +137,19 @@ Packages can be decoupled by separating their responsibility, and they can be tu
         bool isError; // NOT: isNoError
         bool isFound; // NOT: isNotFound
 
-18. Associated constants (final variables) should be prefixed by a common type name.
+18. Associated constants (final variables) should be in a separate class.
 
-        static final int COLOR_RED   = 1;
-        static final int COLOR_GREEN = 2;
-        static final int COLOR_BLUE  = 3;
+		public class Color {
+        	static final int COLOR_RED   = 1;
+        	static final int COLOR_GREEN = 2;
+        	static final int COLOR_BLUE  = 3;
+       }
+	
+	or
+	
+		public enum Color {
+        	RED, GREEN, BLUE
+        }
 
 ###Programming Practice Conventions
 1. Numerical constants (literals) should not be coded directly, except for -1, 0, and 1, which can appear in a for loop as counter values.
