@@ -14,7 +14,7 @@ This document covers the best practices on designing a RESTful API (with the exc
 
 ## Practices
 
-1. Use HTTP-verbs to denote actions:
+### Use HTTP-verbs to denote actions:
 
 `GET` - read/retrieve a resource
 `POST` - create a new resource
@@ -40,7 +40,7 @@ POST /cars/1234/delete
 ```
 
 
-1. Use nouns, not verbs
+### Use nouns, not verbs
 
 Good:
 ```
@@ -53,7 +53,7 @@ Bad:
 ```
 
 
-1. Use **plural** nouns (and do not mix with singular)
+### Use **plural** nouns (and do not mix with singular)
 
 Good:
 ```
@@ -69,7 +69,7 @@ Bad:
 
 
 
-1. GET method should be idempotent (should not change state)
+### GET method should be idempotent (should not change state)
 
 Good:
 ```
@@ -85,7 +85,8 @@ GET /orders/1234/activate
 
 
 
-1. Make a version **mandatory**. **NEVER** release unversioned api for public usage. Avoid dot-notation:
+### Make a version **mandatory**. 
+**NEVER** release unversioned api for public usage. Avoid dot-notation:
 
 GOOD:
 ```
@@ -100,7 +101,7 @@ BAD:
 
 
 
-1. Use HTTP status codes for errors:
+### Use HTTP status codes for errors:
 
 | Code | Status | Meaning | 
 | ---- | ------ | ------- |
@@ -117,7 +118,7 @@ BAD:
 
 
 
-1. Use JSON-wrapper for any kind of return messages:
+### Use JSON-wrapper for any kind of return messages:
 
 Good:
 ```
@@ -140,7 +141,7 @@ Good:
 
 
 
-1. Use parameters for filtering/sorting/limiting. Delimit the *multivalue* parameters with comma. 
+### Use parameters for filtering/sorting/limiting. Delimit the *multivalue* parameters with comma. 
 
 Good:
 ```
@@ -156,7 +157,7 @@ Bad:
 ```
 
 
-1. Use subresources to denote relations. Do not make deep nesting:
+### Use subresources to denote relations. Do not make deep nesting:
 
 Good:
 ```
@@ -173,7 +174,7 @@ Bad:
 
 
 
-1. It is a good idea to have different formats for endpoint responses:
+### It is a good idea to have different formats for endpoint responses:
   1. JSON `/orders`
   2. XML `/orders.xml`
   3. JSONP `/orders?callback=jsonp_callback`
