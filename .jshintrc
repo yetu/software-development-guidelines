@@ -18,5 +18,8 @@
   "maxlen": 100,
   "esnext": true,
   "funcscope": true,
-  "globalstrict": true
+  "globalstrict": true,
+  "debug": false,
+  "node": true,
+  "mocha": true
 }
