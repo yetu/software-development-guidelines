@@ -8,7 +8,7 @@
 
 ## Whitespaces
 
-* Tabs everywhere. Tab size = 2.
+* Space indentation for all files (2 spaces). See [.editorconfig](.editorconfig)
 * Smart tabs are ok.
 * Use one space after `if`, `for`, `while`, etc.
 * Use one space after `function` for anonymous functions but not for named functions:
